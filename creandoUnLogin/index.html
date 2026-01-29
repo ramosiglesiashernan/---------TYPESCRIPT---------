@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Primer Login TS</title>
+</head>
+<body>
+    <div id="login-card"> 
+        <h2>Área de Usuario</h2>
+        <input type="email" id="email" placeholder="Correo electrónico">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button type="button" id="btnLogin">Entrar</button>
+        <p id="mensaje"></p>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+        <h2>Panel de Inventario</h2>
+        <div class="form-producto">
+            <input type="text" id="nombreProd" placeholder="Nombre del producto">
+            <input type="number" id="precioProd" placeholder="Precio">
+            <button id="btnAnadir">Añadir al Inventario</button>
+        </div>
+        
+        <ul id="listaProductos"></ul>
+        
+        <button id="btnLogOut" style="background-color: gray;">Cerrar Sesión</button>
+    </div>
+    <script src="app.js"></script> 
+</body>
+</html>
